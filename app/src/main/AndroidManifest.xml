@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.miguelslemos.oquevairolar" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.miguelslemos.oquevairolar.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.miguelslemos.oquevairolar.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="br.com.miguelslemos.oquevairolar.MainActivity">
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="06ddff216bae5f751199d1d4bd17c5d7d708bfe4" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
